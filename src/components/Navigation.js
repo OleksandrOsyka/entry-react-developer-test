@@ -1,18 +1,23 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
+import CurrencySwitcher from "./CurrencySwitcher";
 
 class Navigation extends Component {
   render() {
     return (
       <ul>
         <li>
-          <Link to="all">All</Link>
+          <Link to="products/all">All</Link>
         </li>
         <li>
-          <Link to="clothes">Clothes</Link>
+          <Link to="products/clothes">Clothes</Link>
         </li>
         <li>
-          <Link to="tech">Tech</Link>
+          <Link to="products/tech">Tech</Link>
+        </li>
+        <li>
+            <CurrencySwitcher />
         </li>
       </ul>
     );

@@ -19,8 +19,8 @@ class App extends Component {
         <Navigation />
 
         <Routes>
-          <Route path=":categoryId" element={<Products />}/>
-          <Route path=":productId" element={<Product />}/>
+          <Route path="products/:categoryId" element={<Products />}/>
+          <Route path="product/:productId" element={<Product />}/>
           <Route path="cart" element={<Cart />}/>
         </Routes>
       </BrowserRouter>
