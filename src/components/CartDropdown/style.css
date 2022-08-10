@@ -1,0 +1,133 @@
+.CartDropdown {
+   height:100%;
+   cursor: pointer;
+}
+
+.CartDropdown_icon {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    position:relative;
+}
+
+.CartDropdown_quantityBadge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #1D1F22;
+    border-radius: 60px;
+}
+
+.CartDropdown_dropdownContent {
+    position: absolute;
+    right: 75px;
+    min-width: 325px;
+    max-height: 75vh;
+    padding: 32px 16px;
+    background-color: #FFFFFF;
+    z-index: 7;
+    overflow-y: scroll;
+}
+
+.CartDropdown_dropdownContent::-webkit-scrollbar {
+    width: 20px;
+}
+
+.CartDropdown_dropdownContent::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.CartDropdown_dropdownContent::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.CartDropdown_dropdownContent::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.CartDropdown_Title {
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.CartDropdown_Quantity {
+    font-weight: 500;
+}
+
+.CartDropdown_total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.CartDropdown_totalValue {
+    font-weight: 700;
+}
+
+.CartDropdown_buttonGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CartDropdown_viewBagButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0px 6px 0px 0px;
+    padding: 16px 32px;
+    background: #FFFFFF;
+    border: 1.5px solid #1D1F22;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.CartDropdown_viewBagButton:hover {
+    background-color: #1D1F22;
+    color: #FFFFFF;
+}
+
+.CartDropdown_checkOutButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0px 0px 0px 6px;
+    padding: 16px 32px;
+    background: #5ECE7B;
+    border: 1.5px solid #5ECE7B;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+

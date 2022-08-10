@@ -1,24 +1,22 @@
 import React, { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Navigation from "./components/Navigation";
-import Products from "./components/Products";
-import Product from "./components/Product";
-import Cart from "./components/Cart";
+import Header from "../Header";
+import Products from "../Products";
+import Product from "../Product";
+import Cart from "../Cart";
+import Overlay from "../Overlay";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
   render() {
     return (
       <BrowserRouter>
-        <Navigation />
+        <Header />
+
+        <Overlay />
 
         <Routes>
+          <Route path="*" element={<Navigate to="products/all" />} />
           <Route path="products/:categoryId" element={<Products />}/>
           <Route path="product/:productId" element={<Product />}/>
           <Route path="cart" element={<Cart />}/>

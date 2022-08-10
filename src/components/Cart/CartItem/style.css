@@ -1,0 +1,109 @@
+.CartItem {
+    display: flex;
+}
+
+.CartItem_info {
+    margin-right: auto;
+}
+
+.CartItem_brand {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.CartItem_name {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.CartItem .PriceLabel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.CartItem .Attributes {
+    display: flex;
+    flex-direction: column;
+}
+
+.CartItem .Attributes_attribute {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.CartItem .Attributes_attributeName {
+    margin-bottom: 8px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.CartItem .Attributes_attributeItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.CartItem .Attributes_attributeItemText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 63px;
+    height: 45px;
+    margin-right: 8px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #1D1F22;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.CartItem .Attributes_attributeItemText_selected {
+    background: #1D1F22;
+    color: #FFFFFF;
+}
+
+.CartItem .Attributes_attributeItemSwatch {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.CartItem .Attributes_attributeItemSwatch_selected {
+    border: 2px solid #5ECE7B;
+}
+
+.CartItem_break {
+    height: 2px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    background: #E5E5E5;
+}
+
+.CartItem_quantityCounter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+.CartItem_quantityCounter .IncrementQuantityButton, .DecrementQuantityButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.CartItem_quantity {
+    font-weight: 500;
+    font-size: 24px;
+}

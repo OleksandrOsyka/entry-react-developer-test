@@ -1,25 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import { PersistGate } from 'redux-persist/integration/react';
+import thunk from "redux-thunk";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-import { reducer } from './reducers';
-import App from './App';
-import { createStore, applyMiddleware, compose } from 'redux';
-import reportWebVitals from './reportWebVitals';
+import { reducer } from "./reducers";
+import App from "./components/App";
+import { createStore, applyMiddleware, compose } from "redux";
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
-const store = createStore(reducer, {}, compose(applyMiddleware(thunk)));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ['currency', 'cart'],
+};
+
+const persistedReducer = persistReducer(persistConfig, reducer);
+
+const store = createStore(
+  persistedReducer,
+  { products: [], currencies: [], currency: {label: 'USD', symbol: '$'}, cart: [] },
+  compose(applyMiddleware(thunk))
+);
+const persistor = persistStore(store);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
     </Provider>
   </React.StrictMode>
-  
-  
 );
 
 // If you want to start measuring performance in your app, pass a function

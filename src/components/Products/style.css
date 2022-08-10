@@ -1,0 +1,17 @@
+.Products {
+    margin: 80px 100px 100px 100px;
+}
+
+.Products_heading {
+    margin-bottom: 87px;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+}
+
+.Products_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    background-color: white;
+}

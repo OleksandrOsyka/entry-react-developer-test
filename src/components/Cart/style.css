@@ -1,0 +1,20 @@
+.Cart {
+    margin: 80px 100px 100px 100px;
+}
+
+.Cart_heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 55px;
+}
+
+.Cart_break {
+    height: 2px;
+    margin-bottom: 24px;
+    background: #E5E5E5;
+}
+
+
+
+

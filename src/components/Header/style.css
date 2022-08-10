@@ -1,0 +1,44 @@
+.Header {
+    position: relative;
+    display: flex;
+    padding: 24px 101px 0px 101px;
+    z-index: 2;
+    background: #FFFFFF;
+}
+
+.Header_navigation {
+    display: flex;
+    flex-basis: 33%;
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+.Header_navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 120%;
+    color: #1D1F22;
+    padding: 0px 16px 32px;
+    background: #FFFFFF;
+}                                                                                                                                                                                         
+
+.Header_navigation a.active {                                   
+    color: #5ECE7B;
+    border-bottom: 2px solid #5ECE7B;
+}
+
+.Header_logo {
+    display: flex;
+    justify-content: center;
+    flex-basis: 33%;
+    background: #FFFFFF;
+}
+
+.Header_actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-basis: 33%;
+    padding: 0px;
+    background: #FFFFFF;
+}

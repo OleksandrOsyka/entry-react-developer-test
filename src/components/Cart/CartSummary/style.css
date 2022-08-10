@@ -1,0 +1,18 @@
+
+.CartSummary tr {
+    margin: 4px 0px;
+}
+
+.CartSummary th {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.CartSummary td {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+}

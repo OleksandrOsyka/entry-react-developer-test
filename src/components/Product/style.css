@@ -1,0 +1,128 @@
+.Product {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 100px;
+    margin: 80px 100px 100px 100px;
+}
+
+.Product_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Product_brand {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.Product_name {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 43px;
+}
+
+.Product .Attributes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.Product .Attributes_attribute {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.Product .Attributes_attributeName {
+    margin-bottom: 8px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.Product .Attributes_attributeItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.Product .Attributes_attributeItemText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 45px;
+    margin-right: 8px;
+    background: #FFFFFF;
+    border: 2px solid #1D1F22;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Product .Attributes_attributeItemText_selected {
+    background: #1D1F22;
+    color: #FFFFFF;
+}
+
+.Product .Attributes_attributeItemSwatch {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.Product .Attributes_attributeItemSwatch_selected {
+    border: 2px solid #5ECE7B;
+}
+
+.Product_price {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.Product .PriceLabel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.Product .AddToCartButton {
+    font-family: 'Raleway';
+    display: block;
+    width: 100%;
+    border: none;
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    background: #5ECE7B;
+    padding: 16px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.Product .AddToCartButton:disabled {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.Product_description {
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+}
+

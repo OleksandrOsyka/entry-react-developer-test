@@ -1,0 +1,32 @@
+.TabGallery {
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+
+.TabGallery_tabImages {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.TabGallery_tabImageContainer {
+    margin: 0px 30px 30px 0px;
+    cursor: pointer;
+}
+
+.TabGallery_tabImage {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: contain;
+}
+
+.TabGallery_expandedImageContainer {
+    width: 85%;
+}
+
+.TabGallery_expandedImage {
+    aspect-ratio: 6 / 5;
+    width: 100%;
+    object-fit: contain;
+}
