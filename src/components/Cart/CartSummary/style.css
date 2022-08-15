@@ -1,18 +1,23 @@
 
-.CartSummary tr {
+.CartSummary_tableRow {
     margin: 4px 0px;
 }
 
-.CartSummary th {
+.CartSummary_tableHeader {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     text-align: left;
 }
 
-.CartSummary td {
+.bold {
+    font-weight: 500;
+}
+
+.CartSummary_tableData {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: left;
 }
+

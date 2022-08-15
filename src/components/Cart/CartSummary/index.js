@@ -39,24 +39,24 @@ class CartSummary extends Component {
     return (
       <table className="CartSummary">
         <tbody>
-        <tr>
-          <th>Tax 21%: </th>
-          <td>
-            {tax.symbol}
-            {tax.amount}
-          </td>
-        </tr>
-        <tr>
-          <th>Quantity: </th>
-          <td>{quantity}</td>
-        </tr>
-        <tr>
-          <th style={{ fontWeight: "500" }}>Total: </th>
-          <td>
-            {total.symbol}
-            {total.amount}
-          </td>
-        </tr>
+          <tr className="CartSummary_tableRow">
+            <th className="CartSummary_tableHeader">Tax 21%: </th>
+            <td className="CartSummary_tableData">
+              {tax.symbol}
+              {tax.amount}
+            </td>
+          </tr>
+          <tr className="CartSummary_tableRow">
+            <th className="CartSummary_tableHeader">Quantity: </th>
+            <td className="CartSummary_tableData">{quantity}</td>
+          </tr>
+          <tr className="CartSummary_tableRow">
+            <th className="CartSummary_tableHeader bold">Total: </th>
+            <td className="CartSummary_tableData">
+              {total.symbol}
+              {total.amount}
+            </td>
+          </tr>
         </tbody>
       </table>
     );
