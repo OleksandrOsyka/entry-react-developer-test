@@ -21,10 +21,9 @@ class Header extends Component {
 
     return (
       <div className="Header">
-
         <div className="Header_navigation">
           {categories.map((category) => (
-            <NavLink to={`products/${category.name}`}>{category.name}</NavLink>
+            <NavLink key={category.name} to={`products/${category.name}`}>{category.name}</NavLink>
           ))}
         </div>
 
