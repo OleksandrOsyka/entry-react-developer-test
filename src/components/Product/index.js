@@ -39,7 +39,7 @@ class Product extends Component {
     const { selectedAttributes } = this.state;
 
     return (
-      <div>
+      <>
         {product && (
           <div className="Product">
             <TabGallery images={product.gallery} />
@@ -54,21 +54,29 @@ class Product extends Component {
               />
               <div className="Product_price">PRICE:</div>
               <PriceLabel prices={product.prices} />
-              <AddToCartButton
-                product={product}
-                quantity={1}
-                selectedAttributes={selectedAttributes}
-              >
-                ADD TO CART
-              </AddToCartButton>
+
+              {product.inStock ? (
+                <AddToCartButton
+                  product={product}
+                  quantity={1}
+                  selectedAttributes={selectedAttributes}
+                >
+                  ADD TO CART
+                </AddToCartButton>
+              ) : (
+                <div className="Product_outOfStockLabel">OUT OF STOCK</div>
+              )}
+
               <div
                 className="Product_description"
                 dangerouslySetInnerHTML={{ __html: product.description }}
               />
             </div>
+
+            {!product.inStock && <div className="Product_overlay" />}
           </div>
         )}
-      </div>
+      </>
     );
   }
 }
