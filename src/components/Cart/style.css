@@ -15,6 +15,19 @@
     background: #E5E5E5;
 }
 
+.Cart_buttonOrder {
+    width: 280px;
+    border-style: none;
+    padding: 13px;
+    margin: 20px 0px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    background: #5ECE7B;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 
 
 

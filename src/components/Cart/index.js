@@ -18,6 +18,7 @@ class Cart extends Component {
           <CartItem item={item} key={item.id} />
         ))}
         <CartSummary />
+        <button className="Cart_buttonOrder">ORDER</button>
       </div>
     );
   }
