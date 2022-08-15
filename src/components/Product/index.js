@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Markup } from "interweave";
 
 import withRouter from "../../hoc/withRouter";
 import { getProduct } from "../../actions/index";
@@ -67,10 +68,9 @@ class Product extends Component {
                 <div className="Product_outOfStockLabel">OUT OF STOCK</div>
               )}
 
-              <div
-                className="Product_description"
-                dangerouslySetInnerHTML={{ __html: product.description }}
-              />
+              <div className="Product_description">
+                <Markup content={product.description} />
+              </div>
             </div>
 
             {!product.inStock && <div className="Product_overlay" />}
