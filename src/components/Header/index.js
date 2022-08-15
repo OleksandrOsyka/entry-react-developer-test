@@ -11,9 +11,7 @@ class Header extends Component {
   state = { categories: [] };
 
   componentDidMount() {
-    fetchCategories().then(({ categories }) =>
-      this.setState({ categories })
-    );
+    fetchCategories().then(({ categories }) => this.setState({ categories }));
   }
 
   render() {
@@ -23,7 +21,9 @@ class Header extends Component {
       <div className="Header">
         <div className="Header_navigation">
           {categories.map((category) => (
-            <NavLink key={category.name} to={`products/${category.name}`}>{category.name}</NavLink>
+            <NavLink key={category.name} to={`products/${category.name}`}>
+              {category.name}
+            </NavLink>
           ))}
         </div>
 
