@@ -1,4 +1,4 @@
-import { request, gql } from 'graphql-request';
+import { request, gql } from "graphql-request";
 
 const endpoint = "http://localhost:4000/grapql";
 
@@ -40,37 +40,36 @@ export const fetchProduct = (id) => {
   return request(endpoint, query, variables);
 };
 
-
-export const fetchProducts = title => {
+export const fetchProducts = (title) => {
   const query = gql`
-  query getProducts($title: String!) {
-    category(input: { title: $title }) {
-      products {
-        id
-        name
-        inStock
-        gallery
-        attributes {
+    query getProducts($title: String!) {
+      category(input: { title: $title }) {
+        products {
+          id
           name
-        }
-        prices {
-          currency {
-            label
-            symbol
+          inStock
+          gallery
+          attributes {
+            name
           }
-          amount
+          prices {
+            currency {
+              label
+              symbol
+            }
+            amount
+          }
+          brand
         }
-        brand
       }
-  }
-}
-`;
+    }
+  `;
 
-const variables = {
-  title,
-};
+  const variables = {
+    title,
+  };
 
-return request(endpoint, query, variables);
+  return request(endpoint, query, variables);
 };
 
 export const fetchCurrencies = () => {
@@ -83,7 +82,17 @@ export const fetchCurrencies = () => {
   }
 `;
 
-return request(endpoint, query);
+  return request(endpoint, query);
+};
 
-  
+export const fetchCategories = () => {
+  const query = `
+  query getCategories {
+    categories {
+      name
+    }
+  }
+  `;
+
+  return request(endpoint, query);
 }

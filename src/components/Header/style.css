@@ -20,6 +20,7 @@
     color: #1D1F22;
     padding: 0px 16px 32px;
     background: #FFFFFF;
+    text-transform: uppercase;
 }                                                                                                                                                                                         
 
 .Header_navigation a.active {                                   
