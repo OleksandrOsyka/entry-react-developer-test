@@ -74,8 +74,8 @@ class CartDropdown extends Component {
 
     return (
       <div className="CartDropdown" ref={this.ref}>
-        <div className="CartDropdown_icon" onClick={this.handleToggleClick}>
-          <div style={{ paddingTop: "4px" }}>
+        <div className="CartDropdown_button" onClick={this.handleToggleClick}>
+          <div>
             <EmptyCartIcon />
             {quantity > 0 && (
               <div className="CartDropdown_quantityBadge">{quantity}</div>

@@ -3,7 +3,7 @@
    cursor: pointer;
 }
 
-.CartDropdown_icon {
+.CartDropdown_button {
     height: 100%;
     display: flex;
     align-items: flex-start;

@@ -16,7 +16,7 @@ class Attributes extends Component {
               key={attribute.id}
               attribute={attribute}
               selectedItem={selectedItem}
-              onSelectAttribute={onSelectAttribute || void(0)}
+              onSelectAttribute={onSelectAttribute}
             />
           );
         })}

@@ -19,7 +19,6 @@ class ProductCard extends Component {
 
     return (
       <div className="ProductCard" onClick={this.handleClick}>
-         
         <div className="ProductCard_imageContainer">
           <img className="ProductCard_image" src={gallery[0]} alt={name} />
 
